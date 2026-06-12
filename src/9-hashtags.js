@@ -1,3 +1,5 @@
 export const hashtags = (text) => {
-  return text
+  const words = text.split(' ')
+
+  return words.filter((word) => word.startsWith('#'))
 }
